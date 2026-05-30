@@ -21,6 +21,12 @@ pipeline {
                 bat 'java -jar target/jenkinsProject3-1.0-SNAPSHOT.jar'
             }
         }
+
+        stage('Show Target Folder') {
+            steps {
+                bat 'dir target'
+            }
+        }
     }
 
     post {
